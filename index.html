@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>David Leger</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="cyan lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Profile</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <!--li><a href="#extra">Extra-Curricular</a></li-->
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <!--li><a href="#extra">Extra-Curricular</a></li-->
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <div class="row">
+        <div class="col offset-s4 s4">
+          <img src="img/face.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+        </div>
+      </div>
+      <h1 class="header center amber-text">David Leger</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Software Engineering, UNB | Fredericton, NB | davidleger95@me.com</h5>
+      </div>
+      <div class="row center">
+        
+        <a href="#modal1" class="btn-large waves-effect waves-light amber modal-trigger">Contact Me</a>
+        <!-- Contact Modal -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Contact Me</h4>
+              <!--p class="">Please send messages to <a href="mailto:davidleger@me.com">davidleger@me.com</a></p>
+              <p>A contact form will be here soon! </br></br>-- David Leger, 21/05/2015</p-->
+              <form id="contact-form" class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="name" type="text" class="validate">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="email" type="text" class="validate">
+                    <label for="email">email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            <a href="#!" id="send" class="waves-effect waves-green btn-flat" onclick="sendEmail()">Send</a>
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  
+  <div id="experience" class="intro amber lighten-1 white-text">
+    <h3 class="center white cyan-text">Experience<hr></h3>
+    
+    <div class="container">
+      
+      <div class="row">
+        
+        <div class="col s12 m6">
+          <h5>Education</h5>
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              
+              <h6 class="bold cyan-text">UNB - Software Engineering <a href="#!" class="secondary-content">2013 - Present</a></h6>
+              <p>The UNB Bachelor of Science in Software Engineering (BScSwE) program is a joint program of the Faculty of Computer
+              Science and the Dept. of Electrical and Computer Engineering. The BScSwE program is one of 14 Software Engineering
+              programs accredited by the Canadian Engineering Accreditation Board (CEAB), and the only CEAB accredited Software
+              Engineering program in Atlantic Canada. [ source: <a href="http://www.unb.ca/fredericton/jp/swe/index.html">www.unb.ca</a> ]</p>
+            </div>
+            
+            <div class="card-action">
+              <a href="http://www.unb.ca/fredericton/jp/swe/index.html" target="_blank">Learn More About SWE</a>
+            </div>
+          </div>
+          
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              
+              <h6 class="bold cyan-text">Rothesay High School<a href="#!" class="secondary-content">2009 - 2013</a></h6>
+              <p>At Rothesay High School, I was involved in many extra-curricular groups including Student Representative
+              Council, Leadership in Volunteerism, Habitat for Humanity, Rotary Interact Club, and Junior Achievement. I
+              was in the French Immersion Program, enrolled in several Level 1 (advanced) and AP courses, and graduated
+              with High Honours (average above 90%).</p>
+            </div>
+            
+            <div class="card-action">
+              <a href="http://web1.nbed.nb.ca/sites/ASD-S/1928/Pages/default.aspx" target="_blank">Learn More About RHS</a>
+            </div>
+          </div>
+          <br>
+          <h5>Certification</h5>
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              
+              <h6 class="bold cyan-text">M101JS: MongoDB for Node.js Developers<a href="#!" class="secondary-content">2015 (Apr)</a></h6>
+              <p>An introductory course provided by MongoDB, Inc. which focuses on learning the basics of developing applications
+              with MongoDB and the Node.js driver. The course material covers CRUD (Create , Read, Update, Delete) operations, schema design, indexing, and performance.</p>
+              <ul>
+                <li><i class="mdi-navigation-chevron-right"></i> <a href="Certificate.pdf" target="_blank">Certificate of Completion</a></li>
+              </ul>
+            </div>
+            
+            <div class="card-action">
+              <a href="https://university.mongodb.com/courses/M101JS/about" target="_blank">Learn More About M101JS</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <h5>Work</h5>
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              
+              <h6 class="bold cyan-text">UNB - Faculty of Education (Co-op)<a href="#!" class="secondary-content">2015 (Jan-Apr)</a></h6>
+              <p class="amber-text">Website & Database Designer</p>
+              <p>Built dynamic, responsive web applications with PHP, HTML, CSS/SCSS, and JavaScript/jQuery.</p>
+              <ul>
+                <!--li><i class="mdi-navigation-chevron-right"></i> <a href="!#">Science Unit in a Box</a></li-->
+              </ul>
+            </div>
+            
+            <div class="card-action">
+              <a href="http://www.unb.ca/fredericton/education/" target="_blank">Learn More About UNB - Edu.</a>
+            </div>
+          </div>
+          
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              
+              <h6 class="bold cyan-text">Mariner Innovations (Co-op)<a href="#!" class="secondary-content">2014 (May-Aug)</a></h6>
+              <p class="amber-text">Junior Program Analyst</p>
+              <p>Built COBOL/JCL analyzation tools to examine and visualize program interactions and database calls within large-scale
+              applications. Used AWK, Batch, C# (Roslyn), Java (ANTLR), HTML, CSS, and Javascript (D3.js).</p>
+              
+            </div>
+            
+            <div class="card-action">
+              <a href="http://www.marinerinnovations.com/en/home/default.aspx" target="_blank">Learn More About Mariner</a>
+            </div>
+          </div>
+          <br>
+          <h5>Freelance</h5>
+          <div class="card white darken-1">
+            <div class="card-content black-text">
+              <h6 class="bold cyan-text">UNB - Accessibility Learning Center<a href="#!" class="secondary-content">2015 (Apr-Present)</a></h6>
+              <p class="amber-text">Website Consultant</p>
+              <p>I provide consulting and maintenance for the Accessibility Learning Center's current website (not developed by me).</p>
+              <!--h6 class="bold cyan-text">Accessibility Learning Center<a href="#!" class="secondary-content">2015 (May)</a></h6>
+              <p class="amber-text">Website Designer</p>
+              <p>Designed and built a responsive website for the Accessibility Learning Center. This website is compliant with
+              W3C's ARIA standards and is designed for use with screenreaders.</p-->
+              
+            </div>
+            
+            <div class="card-action">
+              <a href="http://http://www2.unb.ca/alc" target="_blank">Learn More About the ALC</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    
+  </div>
+
+  <div id="skills" class="intro cyan lighten-1 white-text">
+    <h3 class="center white amber-text">Skills<hr></h3>
+    
+    <div class="container">
+      
+      <div class="row">
+        <div class="col s12 m4">
+          <ul class="collection with-header black-text">
+            <li class="collection-header"><h5>OS/Tools</h5></li>
+            <li class="collection-item"><div>OS X<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Windows<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Linux<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+          </ul>
+          <ul class="collection with-header black-text">
+            <li class="collection-item"><div>phpMyAdmin<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Eclipse<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Rational Software Architect<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Komodo Edit<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Visual Studio<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Quartus II<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+          </ul>
+          <ul class="collection with-header black-text">  
+            <li class="collection-item"><div>Microsoft Office<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>iWork<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+          </ul>
+        </div>
+
+        <div class="col s12 m4">
+          <ul class="collection with-header black-text">
+            <li class="collection-header"><h5>Languages/DBs</h5></li>
+            <li class="collection-item"><div>PHP<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>JavaScript<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>HTML<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>CSS<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Java<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>C<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <!--li class="collection-item"><div>Python<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li-->
+            <li class="collection-item"><div>VHDL<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>AWK<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>MATLAB<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+          </ul>
+          <ul class="collection with-header black-text">
+            <li class="collection-item"><div>MySQL<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>MongoDB<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+          </ul>
+        </div>
+        <div class="col s12 m4">
+          <ul class="collection with-header black-text">
+            <li class="collection-header"><h5>Frameworks/Other</h5></li>
+            <li class="collection-item"><div>jQuery<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>AJAX<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>JSON, XML, CSV<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>AngularJS<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Node.js (with MongoDB)<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+          </ul>
+          <ul class="collection with-header black-text">
+            <li class="collection-item"><div>Sass/SCSS<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Bootstrap<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>MaterializeCSS<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+          </ul>
+          <ul class="collection with-header black-text">
+            <li class="collection-header"><h5>Command Tools</h5></li>
+            <li class="collection-item"><div>Batch<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>Mongo Shell<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+            <li class="collection-item"><div>UnxUtil<a href="#!" class="secondary-content amber-text"><i class="mdi-content-send"></i></a></div></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    
+    
+  </div>
+
+  <div id="connect" class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <!--div class="col s12 m6">
+          <div class="icon-block">
+            <h2 class="center cyan-text"><i class="mdi-image-flash-on"></i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div-->
+
+        <div class="col s12 m6 offset-m3">
+          <div class="icon-block">
+            <h2 class="center cyan-text"><i class="mdi-social-group"></i></h2>
+            <h5 class="center">Connect With Me</h5>
+
+            <p class="light">Want to get to know me a bit better? Check out my LinkedIn profile to see some of my other
+            accomplishments.</p>
+            <a target="_blank" href="https://ca.linkedin.com/pub/david-leger/b6/aa9/395" class="waves-effect waves-light btn cyan"><i class="mdi-content-send right"></i>LinkedIn</a>
+            <a href="#modal1" class="m3 btn waves-effect waves-light amber modal-trigger">Contact Me</a>
+          </div>
+        </div>
+
+        <!--div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center cyan-text"><i class="mdi-action-settings"></i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div-->
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer amber darken-1">
+    <div class="container">
+      <!--div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div-->
+    </div>
+    <div class="footer-copyright cyan lighten-1">
+      <div class="container">
+      David Leger
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function(){
+      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+      $('.modal-trigger').leanModal();
+    });
+    
+    function sendEmail() {
+      var from = $('#email').val();
+      var name = $('#name').val();
+      var msg = $('#message').val();
+      
+      $.post('email.php', {email: from, name: name, msg: msg}, function(response){
+        
+        console.log(response);
+        
+        if (response == 1) {
+          alert("Message sent!");
+          $('#contact-form').trigger("reset");
+        }else{
+          alert("ERROR: There was a problem sending your message. Please try again or send me an email directly at davidleger95@me.com")
+        }
+      });
+    }
+  </script>
+
+  </body>
+</html>
